@@ -1,12 +1,7 @@
 <?php
-/**
-* Initialisation of the app
-*/
-class App
-{
-	
-	function __construct()
-	{
-		
-	}
-}
+
+session_start();
+require_once 'core/App.php';
+require_once 'core/Controller.php';
+
+$app = new App;
