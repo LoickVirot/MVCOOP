@@ -3,6 +3,7 @@ Suzy is a php framework using object-oriented programming and the MVC architectu
 
 #Apache configuration
 In the vhost file :
+```
 <VirtualHost *:80>
         DocumentRoot "/srv/http/Suzy/public"
         ServerName suzy.dev
@@ -14,3 +15,4 @@ In the vhost file :
 
         ErrorLog "/var/log/httpd/suzy-error.log
 </VirtualHost>
+```
