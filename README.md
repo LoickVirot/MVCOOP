@@ -1,7 +1,7 @@
 # Suzy
 Suzy is a php framework using object-oriented programming and the MVC architectural pattern
 
-#Apache configuration
+##Apache configuration
 In the vhost file :
 ```
 <VirtualHost *:80>
