@@ -5,8 +5,10 @@
 </head>
 <body>
 	<?php require_once "../app/view/default/header.php" ?>
-	<?=$content?>
-	<?php require_once "../app/view/default/footer.php" ?>
+	<div class="container">
+		<?=$content?>
+		<?php require_once "../app/view/default/footer.php" ?>
+	</div>
 	<!-- jQuery -->
 	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 	<!-- Bootstrap JavaScript -->
