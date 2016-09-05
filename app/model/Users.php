@@ -1,6 +1,6 @@
 <?php
 /**
- *
+ * Example of model
  */
 class Users extends Database
 {

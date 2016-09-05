@@ -1,14 +1,22 @@
-<?php 
+<?php
 /**
-* 
+* Manage navigation of the app including requested controller
 */
 class App
 {
-
+	/**
+	*	@var string Homepage controller (Default: 'home')
+	**/
 	protected $controller = 'home';
+	/**
+	*	@var string Default method called by the homepage controller (Default: 'index')
+	**/
 	protected $method = 'index';
+	/**
+	*	@var array Parameters sent by URL
+	**/
 	protected $params = [];
-	
+
 	function __construct()
 	{
 		//Connect database
@@ -41,6 +49,10 @@ class App
 		call_user_func_array([$this->controller, $this->method], $this->params);
 	}
 
+	/**
+	* Explode url to listen wich controller, method and parametters are asked
+	* @return array Exploded url ([0] = controller, [1] = method, other are parametters)
+	**/
 	protected function parseUrl()
 	{
 		if (isset($_GET['url'])) {

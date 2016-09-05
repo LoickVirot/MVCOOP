@@ -1,4 +1,7 @@
 <?php
+/**
+*	Basic configuration of the app
+**/
 return
 [
 	"name" => "Suzy",

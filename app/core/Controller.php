@@ -1,6 +1,6 @@
 <?php
 /**
-*
+*	Manage calls of core classes
 */
 class Controller
 {
@@ -9,13 +9,22 @@ class Controller
 	{
 
 	}
-
+	/**
+	*	Call a model file
+	* @param string $model Name of called file
+	* @return Object
+	**/
 	public function model($model)
 	{
 		require_once '../app/model/'.$model.'.php';
 		return new $model();
 	}
 
+	/**
+	*	Call a view file
+	* @param string $view Name of called file
+	* @param array $data Data to transfert to tyhe view
+	**/
 	public function view($view, $data = [])
 	{
 		ob_start();

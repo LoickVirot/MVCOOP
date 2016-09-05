@@ -1,4 +1,7 @@
 <?php
+/**
+* Configuration file used for database connection
+**/
 return
 [
 "host" => "172.24.0.2",
