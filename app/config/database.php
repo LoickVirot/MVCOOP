@@ -1,7 +1,7 @@
 <?php
 return
 [
-"host" => "127.0.0.1",
+"host" => "172.24.0.2",
 "user" => "root",
 "password" => "dev",
 "database" => "suzy",
