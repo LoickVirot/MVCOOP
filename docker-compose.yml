@@ -1,0 +1,30 @@
+version: '2'
+services:
+  web:
+    build: .
+    links:
+      - db
+    depends_on:
+      - db
+    ports:
+      - 8888:80
+    volumes:
+      - .:/var/www/html
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    links:
+      - db
+    depends_on:
+      - db
+    ports:
+      - 8889:80
+
+  db:
+    image: mysql:5.7
+    volumes:
+      - ./.data/db:/var/lib/mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: dev
+      MYSQL_DATABASE: suzy
