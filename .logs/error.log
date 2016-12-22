@@ -1,1 +1,0 @@
-[Mon Sep 05 19:45:26.720167 2016] [:error] [pid 13] [client 172.24.0.1:33598] PHP Parse error:  syntax error, unexpected '}' in /var/www/html/app/core/Database.php on line 62
