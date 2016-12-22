@@ -53,9 +53,9 @@ class App
         //If page need login
         if (array_key_exists($url[0], $this->loginRequired) && in_array($this->method, $this->loginRequired[$url[0]])) {
 			//Check if user is logged
-			require_once 'Auth.php';
-			$auth = new Auth();
-			if ($auth->isUserLogged())
+			require_once 'AuthManager.php';
+			new AuthManager();
+			if (AuthManager::isUserLogged())
 				call_user_func_array([$this->controller, $this->method], $this->params);
 			else
 				header('Location:/auth');
