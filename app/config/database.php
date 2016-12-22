@@ -4,7 +4,7 @@
 **/
 return
 [
-"host" => "172.24.0.2",
+"host" => "127.0.0.1",
 "user" => "root",
 "password" => "dev",
 "database" => "suzy",
